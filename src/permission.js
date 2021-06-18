@@ -31,7 +31,8 @@ router.beforeEach(async (to, from, next) => {
         } catch (error) {
           await store.dispatch("user/resetToken");
           Message.error(error || "Has Error");
-          next(`/login?redirect=${to.path}`);
+          window.location.href = 'http://localhost:9527/#/login?redirect=%2F';
+          next();
           NProgress.done();
         }
       }
@@ -44,7 +45,8 @@ router.beforeEach(async (to, from, next) => {
       next();
     } else {
       // other pages that do not have permission to access are redirected to the login page.
-      next(`/login?redirect=${to.path}`);
+      window.location.href = 'http://localhost:9527/#/login?redirect=%2F';
+      next();
       NProgress.done();
     }
   }
