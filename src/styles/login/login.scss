@@ -1,0 +1,85 @@
+.login-container {
+  min-height: 100%;
+  width: 100%;
+  background-color: $backgroundColorLogin;
+  overflow: hidden;
+
+  .el-input ::v-deep {
+    display: inline-block;
+    height: 2.9375rem;
+    width: 85%;
+
+    input {
+      background: transparent;
+      border: 0rem;
+      -webkit-appearance: none;
+      border-radius: 0rem;
+      padding: 0.75rem 0.3125rem 0.75rem 0.9375rem;
+      color: $fontColorInputLogin;
+      height: 2.9375rem;
+
+      &:-webkit-autofill {
+        box-shadow: 0 0 0rem 62.5rem $backgroundColorLogin inset !important;
+        -webkit-text-fill-color: $fontColorInputLogin !important;
+      }
+    }
+  }
+
+  .el-form-item {
+    border: 0.0625rem solid $borderColorInputLogin;
+    background: $backgroundColorInputLogin;
+    border-radius: 0.3125rem;
+    color: $fontColorInputLogin;
+  }
+
+  .login-form {
+    position: relative;
+    width: 32.5rem;
+    max-width: 100%;
+    padding: 10rem 2.1875rem 0;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .svg-container {
+    padding: 0.375rem 0.3125rem 0.375rem 0.9375rem;
+    color: $darkGray;
+    vertical-align: middle;
+    width: 1.875rem;
+    display: inline-block;
+  }
+
+  .title-container {
+    position: relative;
+
+    .title {
+      font-size: 1.625rem;
+      color: $fontColorTitleLogin;
+      margin: 0rem auto 2.5rem auto;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+
+  .show-pwd {
+    position: absolute;
+    right: 0.625rem;
+    top: 0.4375rem;
+    font-size: 1rem;
+    color: $darkGray;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .thirdparty-button {
+    position: absolute;
+    right: 0;
+    bottom: 0.375rem;
+  }
+
+  @media only screen and (max-width: 29.375rem) {
+    .thirdparty-button {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+// 调整组件位置
+.common-page {
+  margin-top: 1.5rem;
+  // 放大镜图标和查询字体之间的间距
+  .iconsearch {
+    margin-right: 0.5rem;
+  }
+  // 调整搜索框位置
+  #search {
+    padding-left: 1.875rem;
+  }
+  // tabs开启相对定位
+  #tabs {
+    position: relative;
+    padding-left: 1.875rem;
+  }
+  // 设置筛选按钮位置
+  #filtrate {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.9375rem;
+    z-index: 100;
+    span {
+      padding-right: 0.3125rem;
+    }
+  }
+  // 设置表格位置
+  #table {
+    position: relative;
+    top: 0.0625rem;
+  }
+  // 设置分页器位置
+  #paging {
+    float: right;
+    margin: 1.25rem 1.25rem 0 0;
+  }
+  .textname {
+    padding-left: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    span {
+      padding-right: 10px;
+    }
+  }
+}

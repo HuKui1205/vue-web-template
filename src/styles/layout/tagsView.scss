@@ -1,0 +1,87 @@
+.tags-view-container {
+  height: 2.125rem;
+  width: 100%;
+  background: $backgroundColorTag;
+  border-bottom: 0.0625rem solid $borderColorTag;
+  box-shadow: 0 0.0625rem 0.1875rem 0 $borderColorTagShadowStart,
+    0 0 0.1875rem 0 $borderColorTagShadowEnd;
+  .tags-view-wrapper {
+    .tags-view-item {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      height: 1.625rem;
+      line-height: 1.625rem;
+      color: $fontColorTag;
+      background: $backgroundColorTagItem;
+      padding: 0 0.5rem;
+      font-size: 0.875rem;
+      margin-left: 0.3125rem;
+      margin-top: 0.25rem;
+      font-weight: 700;
+      &:first-of-type {
+        margin-left: 0.9375rem;
+      }
+      &:last-of-type {
+        margin-right: 0.9375rem;
+      }
+      &.active {
+        color: $fontColorTagActive;
+        &::before {
+          content: "";
+          background: $backgroundColorTagItemAcitve;
+          display: inline-block;
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 50%;
+          position: relative;
+          margin-right: 0.125rem;
+        }
+      }
+    }
+  }
+  .contextmenu {
+    margin: 0;
+    background: $backgroundColorTagMenu;
+    z-index: 3000;
+    position: absolute;
+    list-style-type: none;
+    padding: 0.3125rem 0;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: $fontColorTagMenu;
+    box-shadow: 0.125rem 0.125rem 0.1875rem 0 $borderColorTagMenuShadow;
+    li {
+      margin: 0;
+      padding: 0.4375rem 1rem;
+      cursor: pointer;
+      &:hover {
+        background: $backgroundColorTagMenuHover;
+      }
+    }
+  }
+}
+
+.tags-view-wrapper {
+  .tags-view-item {
+    .el-icon-close {
+      width: 1rem;
+      height: 1rem;
+      vertical-align: 0.125rem;
+      border-radius: 50%;
+      text-align: center;
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+      transform-origin: 100% 50%;
+      &:before {
+        transform: scale(0.6);
+        display: inline-block;
+        vertical-align: -0.0625rem;
+      }
+      &:hover {
+        background-color: $backgroundColorTagItemCloseHover;
+        color: $fontColorTagItemCloseHover;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.navbar {
+  height: 3.125rem;
+  overflow: hidden;
+  position: relative;
+  background: $backgroundColor;
+
+  .hamburger-container {
+    line-height: 2.875rem;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background: $backgroundColorHover;
+    }
+  }
+
+  .breadcrumb-container {
+    float: left;
+  }
+
+  .errLog-container {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .right-menu {
+    float: right;
+    height: 100%;
+    line-height: 3.125rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    .right-menu-item {
+      display: inline-block;
+      padding: 0 0.5rem;
+      height: 100%;
+      font-size: 1.125rem;
+      color: #5a5e66;
+      vertical-align: text-bottom;
+
+      &.hover-effect {
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+          background: $backgroundColorHover;
+        }
+      }
+    }
+
+    .avatar-container {
+      margin-right: 1.875rem;
+
+      .avatar-wrapper {
+        margin-top: 0.3125rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .user-avatar {
+          cursor: pointer;
+          width: 3.75rem;
+          height: 2.5rem;
+        }
+
+        .el-icon-caret-bottom {
+          cursor: pointer;
+          position: absolute;
+          right: -1.25rem;
+          top: 1.5625rem;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}
