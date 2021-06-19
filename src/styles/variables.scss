@@ -1,151 +1,102 @@
 // 基础色 （开始）
-$black: #000000; //纯黑
-$dmiBlack: #333333; //淡黑
+$black: #000000; // 纯黑
+$dmiBlack: #333333; // 淡黑
 
-$blue: #0000ff; //纯蓝
-$doderBlue: #1e90ff; //宝蓝
-$deepSkyBlue: #00bfff; //	深天蓝
+$blue: #0000ff; // 纯蓝
+$doderBlue: #1e90ff; // 宝蓝
+$deepSkyBlue: #00bfff; // 	深天蓝
+$lightBlue: #add8e6; // 淡蓝
 
-$red: #ff0000; //纯红
+$red: #ff0000; // 纯红
+$pink: #ffc0cb; // 	粉红
 
-$green: #008000; //纯绿
+$green: #008000; // 纯绿
 
-$yellow: #ffff00; //纯黄
+$yellow: #ffff00; // 纯黄
 
-$white: #ffffff; //纯白
-$whiteSmoke: #f5f5f5; //烟白
-$gainsboro: #dcdcdc; //	亮灰色
-$darkGray: #a9a9a9; //深灰色
-$dimGray: #696969; //暗淡的灰色
-$gray: #808080; //灰色
-// 基础色（结束）
+$white: #ffffff; // 纯白
+$whiteSmoke: #f5f5f5; // 烟白
+$gainsboro: #dcdcdc; // 	亮灰色
+$darkGray: #a9a9a9; // 深灰色
+$dimGray: #696969; // 暗淡的灰色
+$gray: #808080; // 灰色
+// 基础色 （结束）
 
-// 字体色（开始）
-$fontColor: $black; //全局默认
+// 字体色 （开始）
+$fontColor: $black; // 全局默认
+// 字体激活色
+$fontColorActive: #1890ff; // 字体激活时的颜色
 // 按钮
-$fontColorButton: $white; //默认
+$fontColorButton: $white; // 默认
 // 输入框
-$fontColorInput: $white; //输入文本
-$fontColorInputPlaceholder: $darkGray; //占位文本
-// 面包屑
-$fontColorBreadcrumb: #303133; //正常
-$fontColorBreadcrumbDisabled: #97a8be; //禁用
-// 标签
-$fontColorTag: #7b7b7ccb; //未选中
-$fontColorTagActive: $black; //选中
-$fontColorTagMenu: $dmiBlack; //标签页右键菜单字体颜色
-$fontColorTagItemCloseHover: $white; //标签页单标签关闭按钮悬浮时颜色
-// 表格
-$fontColorTableHead: $dmiBlack; //表头默认
-$fontColorTableBody: #606266; //表格默认
-// 分页
-$fontColorPagination: #606266; //默认
-$fontColorPaginationActive: #1890ff; //激活
+$fontColorInput: $white; // 输入文本
+$fontColorInputPlaceholder: $darkGray; // 占位文本
 // 导航菜单
-$fontColorNavMenu: #bfcbd9; //默认
-$fontColorNavMenuActive: $fontColor; //激活
-$fontColorNavMenuLogo: $white; //导航栏logo字体颜色
-// 登录页
-$fontColorLogin: $white; //登录页字体颜色
-$fontColorTitleLogin: $fontColorLogin; //登录页标题颜色
-$fontColorInputLogin: $fontColorLogin; //登录页输入文本颜色
-// 主页
-$fontColorHome: $fontColorLogin; //主页字体颜色
+$fontColorNavMenu: #bfcbd9; // 默认
+$fontColorNavMenuActive: $white; // 激活
+$fontColorNavMenuLogo: $white; // 导航栏logo字体颜色
 // 内页
-$fontColorPageTitle: #0c2278; //内页头部颜色
-// 字体色（结束）
-
-// 背景色（开始）
-$backgroundColor: $white; //背景默认颜色
-// 背景遮罩
-$backgroundColorMaskBg: #00000049; //默认遮罩颜色
-$backgroundColorHover: #00000009; //悬浮时的背景色
-// 登录页面
-$backgroundColorLogin: #2d3a4b; //默认背景色
-$backgroundColorInputLogin: #00000019; //输入框背景色
-// 主页
-$backgroundColorHome: $backgroundColorLogin; //主页背景颜色
-// 按钮
-$backgroundColorButton: #1890ff; //默认
-// 输入框
-$backgroundColorInput: $white; //默认
-// 表格
-$backgroundColorTableHead: #f0f7ff; //表格头的背景颜色
-$backgroundColorTableHover: #f5f7fa; //表格悬浮颜色
-// 主页
-$backgroundColorButtonHome: #deecff; //按钮背景色
-// 菜单
-$backgroundColorNavMenu: #0c2278; //菜单背景色
-$backgroundColorNavMenuLogo: #0a1e67; //菜单logo的背景色
+$fontColorPageTitle: #0c2278; // 内页头部颜色
+// 面包屑
+$fontColorBreadcrumb: #303133; // 正常
+$fontColorBreadcrumbDisabled: #97a8be; // 禁用
 // 标签
-$backgroundColorTag: $backgroundColor; //标签页的背景颜色
-$backgroundColorTagItem: $backgroundColorTag; //标签页的单标签背景色
-$backgroundColorTagItemAcitve: $backgroundColorTagItem; //标签页单标签激活时的背景色
-$backgroundColorTagItemCloseHover: #b4bccc; //标签页单单标签关闭按钮悬浮背景色
-$backgroundColorTagMenu: $backgroundColorTag; //标签页右键菜单背景颜色
-$backgroundColorTagMenuHover: $whiteSmoke; //亮灰色
-// 内页
-$backgroundColorPageTitle: $whiteSmoke; //内页头部背景颜色
-// 背景色（结束）
-
-// 边框色（开始）
-$borderColor: transparent;
-// 输入框
-$borderColorInput: #ffffff19; //默认边框颜色
+$fontColorTag: #7b7b7ccb; // 未选中
+$fontColorTagActive: $fontColorActive; // 选中
+$fontColorTagMenu: $dmiBlack; // 标签页右键菜单字体颜色
+$fontColorTagItemCloseHover: $white; // 标签页单标签关闭按钮悬浮时颜色
 // 表格
-$borderColorTable: #dcdfe7; //表格边框默认颜色
-// 登录页
-$borderColorInputLogin: $borderColorInput; //输入框边框颜色
-// 标签页
-$borderColorTag: #d8dce5; //底部边框色
-$borderColorTagShadowStart: #00000019; //阴影颜色起点颜色
-$borderColorTagShadowEnd: #00000009; //阴影颜色终点颜色
-$borderColorTagMenuShadow: #00000049; //标签页菜单阴影色
+$fontColorTableHead: $dmiBlack; // 表头默认
+$fontColorTableBody: #606266; // 表格默认
+// 分页
+$fontColorPagination: #606266; // 默认
+$fontColorPaginationActive: $fontColorActive; // 激活
+// 字体色 （结束）
+
+// 背景色 （开始）
+$backgroundColor: $white; // 背景默认颜色
+$backgroundColorActive: $fontColorActive; // 激活背景色
+// 背景遮罩
+$backgroundColorMaskBg: #00000049; // 默认遮罩颜色
+// 按钮
+$backgroundColorButton: $backgroundColorActive; // 默认
+// 输入框
+$backgroundColorInput: $white; // 默认
+// 菜单
+$backgroundColorNavMenu: #0c2278; // 菜单背景色
+$backgroundColorNavMenuHover: #2751c4; // 菜单悬浮背景色
+$backgroundColorNavMenuActive: $backgroundColorActive; // 菜单激活颜色
+$backgroundColorNavMenuLogo: #0a1e67; // 菜单logo的背景色
+$backgroundColorNavBarHover: #00000009; // 悬浮时的背景色
+// 标签
+$backgroundColorTag: $backgroundColor; // 标签页的背景颜色
+$backgroundColorTagItem: $backgroundColorTag; // 标签页的单标签背景色
+$backgroundColorTagItemAcitve: $backgroundColorTagItem; // 标签页单标签激活时的背景色
+$backgroundColorTagItemCloseHover: #b4bccc; // 标签页单单标签关闭按钮悬浮背景色
+$backgroundColorTagMenu: $backgroundColorTag; // 标签页右键菜单背景颜色
+$backgroundColorTagMenuItemHover: $whiteSmoke; // 标签页悬浮背景色
 // 内页
-$borderColorPageTitlte: #0079fe; //内页边框颜色
-// 边框色（结束）
+$backgroundColorPageTitle: $whiteSmoke; // 内页头部背景颜色
+// 表格
+$backgroundColorTableHead: #f0f7ff; // 表格头的背景颜色
+$backgroundColorTableHover: #f5f7fa; // 表格悬浮颜色
+// 背景色 （结束）
 
-// base color
-$blue: #324157;
-$lightBlue: #3a71a8;
-$red: #c03639;
-$pink: #e65d6e;
-$green: #30b08f;
-$tiffany: #4ab7bd;
-$yellow: #fec171;
-$darkDyan: #008b8b; //深青色
+// 边框色 （开始）
+$borderColor: #d9d9d9; //默认边框颜色
+// 表格
+$borderColorTable: #dcdfe7; // 表格边框默认颜色
+// 标签页
+$borderColorTag: #d8dce5; // 底部边框色
+$borderColorTagShadowStart: #00000019; // 阴影颜色起点颜色
+$borderColorTagShadowEnd: #00000009; // 阴影颜色终点颜色
+$borderColorTagMenuShadow: #00000049; // 标签页菜单阴影色
+// 内页
+$borderColorPageTitlte: #0079fe; // 内页边框头部颜色
+// 边框色 （结束）
 
-// sidebar
-$menuText: #bfcbd9;
-$menuActiveText: #ffffff;
-$subMenuActiveText: #f4f4f5; // https://github.com/ElemeFE/element/issues/12951
-
-$menuBg: #0c2278;
-$menuHover: #2751c4;
-// $menuBg:green;
-// $menuHover:pink;
-
-$subMenuBg: #0c2278;
-$subMenuHover: #2751c4;
-$subMenuActiveBg: #1890ff;
-// $subMenuBg:blue;
-// $subMenuHover:pink;
-// $subMenuActiveBg:deeppink;
-
-$sideBarWidth: 210px;
-$filtratefs: 12px;
-
-// the :export directive is the magic sauce for webpack
-// https://www.bluematador.com/blog/howTo-share-variablesBetween-jsAnd-sass
-:export {
-  menuText: $menuText;
-  menuActiveText: $menuActiveText;
-  subMenuActiveText: $subMenuActiveText;
-  menuBg: $menuBg;
-  menuHover: $menuHover;
-  subMenuBg: $subMenuBg;
-  subMenuHover: $subMenuHover;
-  sideBarWidth: $sideBarWidth;
-  filtratefs: $filtratefs;
-  subMenuActiveBg: $subMenuActiveBg;
-}
+// 大小
+$sizeFont: 1rem; // 字体默认大小
+// 菜单
+$sizeNavMenuWidth: 13.125rem; // 左侧导航栏宽度
+// 大小

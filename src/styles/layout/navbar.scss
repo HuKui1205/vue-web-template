@@ -12,7 +12,7 @@
     transition: background 0.3s;
 
     &:hover {
-      background: $backgroundColorHover;
+      background: $backgroundColorNavBarHover;
     }
   }
 
@@ -47,7 +47,7 @@
         transition: background 0.3s;
 
         &:hover {
-          background: $backgroundColorHover;
+          background: $backgroundColorNavBarHover;
         }
       }
     }

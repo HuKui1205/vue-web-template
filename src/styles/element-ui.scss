@@ -69,7 +69,7 @@
 // dropdown
 .el-dropdown-menu {
   a {
-    display: block
+    display: block;
   }
 }
 
@@ -87,5 +87,35 @@
 .el-popup-parent--hidden {
   .fixed-header {
     padding-right: 15px;
+  }
+}
+
+// 去除tabs标签页与表格之间的空白
+.el-tabs__header {
+  margin: 0;
+}
+// 去除tabs标签页下边框
+.el-tabs__nav-wrap::after {
+  height: 0;
+}
+.el-table {
+  thead {
+    tr {
+      th {
+        background-color: $backgroundColorTableHead;
+        border-color: $borderColorPageTitlte $borderColorTable $borderColorTable;
+        border-width: 0.125rem 0.0625rem 0.0625rem 0;
+        border-style: solid;
+        border-image: initial;
+      }
+    }
+  }
+}
+.el-table__body {
+  tr.el-table__row {
+    td {
+      border: none;
+      border-bottom: 1px solid $borderColorTable;
+    }
   }
 }
