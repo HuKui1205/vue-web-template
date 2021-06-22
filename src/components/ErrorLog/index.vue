@@ -1,14 +1,14 @@
 <template>
   <div v-if="errorLogs.length>0">
-    <el-badge :is-dot="true" style="line-height: 25px;margin-top: -5px;" @click.native="dialogTableVisible=true">
-      <el-button style="padding: 8px 10px;" size="small" type="danger">
+    <el-badge :is-dot="true" style="line-height: 1.5625rem;margin-top: -0.3125rem;" @click.native="dialogTableVisible=true">
+      <el-button style="padding: 0.5rem 0.625rem;" size="small" type="danger">
         <svg-icon icon-class="bug" />
       </el-button>
     </el-badge>
 
     <el-dialog :visible.sync="dialogTableVisible" width="80%" append-to-body>
       <div slot="title">
-        <span style="padding-right: 10px;">Error Log</span>
+        <span style="padding-right: 0.625rem;">Error Log</span>
         <el-button size="mini" type="primary" icon="el-icon-delete" @click="clearAll">Clear All</el-button>
       </div>
       <el-table :data="errorLogs" border>
@@ -22,14 +22,14 @@
             </div>
             <br>
             <div>
-              <span class="message-title" style="padding-right: 10px;">Info: </span>
+              <span class="message-title" style="padding-right: 0.625rem;">Info: </span>
               <el-tag type="warning">
                 {{ row.vm.$vnode.tag }} error in {{ row.info }}
               </el-tag>
             </div>
             <br>
             <div>
-              <span class="message-title" style="padding-right: 16px;">Url: </span>
+              <span class="message-title" style="padding-right: 1rem;">Url: </span>
               <el-tag type="success">
                 {{ row.url }}
               </el-tag>
@@ -70,9 +70,9 @@ export default {
 
 <style scoped>
 .message-title {
-  font-size: 16px;
+  font-size: 1rem;
   color: #333;
   font-weight: bold;
-  padding-right: 8px;
+  padding-right: 0.5rem;
 }
 </style>

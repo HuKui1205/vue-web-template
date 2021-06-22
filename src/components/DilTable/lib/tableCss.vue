@@ -20,13 +20,13 @@ export default {
 .tableAbility ::v-deep {
   .el-table {
     th {
-      padding: 4px 0;
+      padding: 0.25rem 0;
       .cell {
-        max-height: 35.22px;
+        max-height: 2.2012rem;
       }
     }
     td {
-      padding: 10px 0;
+      padding: 0.625rem 0;
     }
   }
 

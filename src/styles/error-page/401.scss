@@ -1,7 +1,7 @@
 .errPage-container {
-  width: 800px;
+  width: 50rem;
   max-width: 100%;
-  margin: 100px auto;
+  margin: 6.25rem auto;
   .pan-back-btn {
     background: #008489;
     color: #fff;
@@ -17,14 +17,14 @@
     width: 100%;
   }
   .text-jumbo {
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 700;
     color: #484848;
   }
   .list-unstyled {
-    font-size: 14px;
+    font-size: 0.875rem;
     li {
-      padding-bottom: 5px;
+      padding-bottom: 0.3125rem;
     }
     a {
       color: #008489;

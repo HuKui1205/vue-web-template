@@ -7,17 +7,11 @@
 
 // 重置el-menu的样式
 ::v-deep {
-  .el-menu,
   .el-submenu__title,
   .el-menu-item {
-    color: $fontColorNavMenu;
-
     &.is-active {
       color: $fontColorNavMenuActive;
     }
-  }
-  .el-menu {
-    background-color: $backgroundColorNavMenu;
   }
 }
 
@@ -41,6 +35,7 @@
 
   .scrollbar-wrapper {
     overflow-x: hidden !important;
+    height: calc(100% - 3.125rem);
   }
 
   .el-scrollbar__bar.is-vertical {
@@ -80,17 +75,6 @@
     border: none;
     height: 100%;
     width: 100% !important;
-  }
-
-  // menu hover
-  .submenu-title-noDropdown,
-  .el-submenu__title {
-    &:hover {
-      background-color: $backgroundColorNavMenuHover !important;
-    }
-  }
-  .el-submenu .el-menu-item.is-active {
-    background-color: $backgroundColorNavMenuActive !important;
   }
   .is-active > .el-submenu__title {
     color: $fontColorNavMenuActive !important;

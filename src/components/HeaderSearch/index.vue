@@ -163,12 +163,12 @@ export default {
 
   .search-icon {
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1.125rem;
     vertical-align: middle;
   }
 
   .header-search-select {
-    font-size: 18px;
+    font-size: 1.125rem;
     transition: width 0.2s;
     width: 0;
     overflow: hidden;
@@ -183,15 +183,15 @@ export default {
       padding-left: 0;
       padding-right: 0;
       box-shadow: none !important;
-      border-bottom: 1px solid $borderColor;
+      border-bottom: 0.0625rem solid $borderColor;
       vertical-align: middle;
     }
   }
 
   &.show {
     .header-search-select {
-      width: 210px;
-      margin-left: 10px;
+      width: 13.125rem;
+      margin-left: 0.625rem;
     }
   }
 }

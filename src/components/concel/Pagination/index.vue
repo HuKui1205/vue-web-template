@@ -93,7 +93,7 @@ export default {
 <style scoped lang="scss">
 .pagination-container {
   background: $backgroundColor;
-  padding: 32px 16px;
+  padding: 2rem 1rem;
 }
 .pagination-container.hidden {
   display: none;

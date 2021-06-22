@@ -1,35 +1,34 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from "vue";
+import Router from "vue-router";
 
-Vue.use(Router)
+Vue.use(Router);
 
 /* Layout */
-import Layout from '@/layout'
+import Layout from "@/layout";
 
 export const constantRoutes = [
   {
-    path: '/redirect',
+    path: "/redirect",
     component: Layout,
     hidden: true,
     children: [
       {
-        path: '/redirect/:path(.*)',
-        component: () => import('@/views/redirect/index')
+        path: "/redirect/:path(.*)",
+        component: () => import("@/views/redirect/index")
       }
     ]
   },
   {
-    path: '/404',
-    component: () => import('@/views/error-page/404'),
+    path: "/404",
+    component: () => import("@/views/error-page/404"),
     hidden: true
   },
   {
-    path: '/401',
-    component: () => import('@/views/error-page/401'),
+    path: "/401",
+    component: () => import("@/views/error-page/401"),
     hidden: true
-  },
-]
-
+  }
+];
 
 //* 需要权限的路由
 export const needjurisdiction = [
@@ -49,34 +48,35 @@ export const needjurisdiction = [
     children: [
       {
         //*匹配的路径
-        path: '/specimen',
-        component: () => import('@/views/specimen/specimen'),
-        name:'specimen',
-        /** 
-          *!meta:路由的属性对象
-          **title:出现在左边菜单栏的菜单名称
-          **role：要拥有哪些权限才可以访问该路由
-          **icon:左边菜单栏的图标
-          *!activeMenu:当前路由如果隐藏，要用此属性，来激活上一级菜单
-        */
-        meta: { title: "样品", role: ["admin"],icon: "fullscreen" },
+        path: "/specimen",
+        component: () => import("@/views/specimen/specimen"),
+        name: "specimen",
+        /**
+         *!meta:路由的属性对象
+         **title:出现在左边菜单栏的菜单名称
+         **role：要拥有哪些权限才可以访问该路由
+         **icon:左边菜单栏的图标
+         *!activeMenu:当前路由如果隐藏，要用此属性，来激活上一级菜单
+         */
+        meta: { title: "样品", role: ["admin"], icon: "fullscreen" }
         /**
          * !如果该路由不需要出现在左边的菜单栏，要用该属性来隐藏
          * *hidden: true
          */
       }
     ]
-  },
-]
-const createRouter = () => new Router({
-  scrollBehavior: () => ({ y: 0 }),
-  routes: constantRoutes
-})
+  }
+];
+const createRouter = () =>
+  new Router({
+    scrollBehavior: () => ({ y: 0 }),
+    routes: constantRoutes
+  });
 
-const router = createRouter()
+const router = createRouter();
 export function resetRouter() {
-  const newRouter = createRouter()
-  router.matcher = newRouter.matcher
+  const newRouter = createRouter();
+  router.matcher = newRouter.matcher;
 }
 
-export default router
+export default router;

@@ -53,8 +53,8 @@ export default {
   display: inline-block;
   cursor: pointer;
   fill: #5a5e66;;
-  width: 20px;
-  height: 20px;
-  vertical-align: 10px;
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: 0.625rem;
 }
 </style>

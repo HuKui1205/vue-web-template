@@ -27,6 +27,6 @@ export default {
 
 <style scoped>
   .errPage-container {
-    padding: 30px;
+    padding: 1.875rem;
   }
 </style>

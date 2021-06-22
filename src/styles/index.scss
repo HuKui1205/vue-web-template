@@ -2,6 +2,12 @@
 @import "./element-ui.scss";
 @import "./btn.scss";
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+  color: $fontColor;
+}
+
 body {
   height: 100%;
   -moz-osx-font-smoothing: grayscale;
@@ -14,11 +20,6 @@ body {
 
 label {
   font-weight: 700;
-}
-
-html {
-  height: 100%;
-  box-sizing: border-box;
 }
 
 [v-cloak] {

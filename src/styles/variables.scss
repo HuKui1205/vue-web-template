@@ -22,6 +22,14 @@ $dimGray: #696969; // 暗淡的灰色
 $gray: #808080; // 灰色
 // 基础色 （结束）
 
+// 状态色
+$colorPrimary: #1890ff;
+$colorSuccess: #13ce66;
+$colorWarning: #ffba00;
+$colorDanger: #ff4949;
+$colorInfo: #1e1e1e;
+// 状态色
+
 // 字体色 （开始）
 $fontColor: $black; // 全局默认
 // 字体激活色
@@ -79,6 +87,7 @@ $backgroundColorTagMenuItemHover: $whiteSmoke; // 标签页悬浮背景色
 $backgroundColorPageTitle: $whiteSmoke; // 内页头部背景颜色
 // 表格
 $backgroundColorTableHead: #f0f7ff; // 表格头的背景颜色
+$backgroundColorTableRowStriped: #f0f7ff; //表格斑马纹颜色
 $backgroundColorTableHover: #f5f7fa; // 表格悬浮颜色
 // 背景色 （结束）
 
@@ -86,6 +95,7 @@ $backgroundColorTableHover: #f5f7fa; // 表格悬浮颜色
 $borderColor: #d9d9d9; //默认边框颜色
 // 表格
 $borderColorTable: #dcdfe7; // 表格边框默认颜色
+$borderColorTableTop: $blue;//表格顶部边框颜色
 // 标签页
 $borderColorTag: #d8dce5; // 底部边框色
 $borderColorTagShadowStart: #00000019; // 阴影颜色起点颜色

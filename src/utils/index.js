@@ -355,3 +355,12 @@ export function removeClass(ele, cls) {
     ele.className = ele.className.replace(reg, ' ')
   }
 }
+
+// 时间戳转换函数
+export function formatterTabelTime(row, column, cellValue, index) {
+  let dateee = new Date(cellValue).toJSON();
+  return new Date(+new Date(dateee) + 8 * 3600 * 1000)
+    .toISOString()
+    .replace(/T/g, " ")
+    .replace(/\.[\d]{3}Z/, "");
+}

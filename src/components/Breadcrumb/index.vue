@@ -80,9 +80,9 @@ export default {
 <style lang="scss" scoped>
 .app-breadcrumb.el-breadcrumb {
   display: inline-block;
-  font-size: 14px;
-  line-height: 50px;
-  margin-left: 8px;
+  font-size: 0.875rem;
+  line-height: 3.125rem;
+  margin-left: 0.5rem;
 
   .no-redirect {
     color: $fontColorBreadcrumbDisabled;
